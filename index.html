@@ -84,7 +84,7 @@
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Ajeng <i class="fa fa-heart" aria-hidden="true" style="color: #f14e95; font-size: 50px;"></i> Yudo</h1>
 							<h2>We Are Getting Married</h2>
-							<div class="simply-countdown simply-countdown-one"></div>
+							<h1 style="font-size: -webkit-xxx-large;" class="simply-countdown simply-countdown-one" id="simply-countdown-one"></h1>
 							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
 						</div>
 					</div>
@@ -144,7 +144,7 @@
 									<h3>Akad Nikah</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>7:00 AM</span>
+										<span>08:00 AM</span>
 										<span>10:00 AM</span>
 									</div>
 									<div class="event-col">
@@ -152,7 +152,7 @@
 										<span>Sunday 5th</span>
 										<span>November, 2017</span>
 									</div>
-									<p>Akad Bertempat di kediaman mempelai wanita | Jl Bendungan Melayu Utara Rt 11 Rw 01 Kel. Tugu Selatan Kec. Koja, Jakarta Utara</p>
+									<p>Akad Bertempat di Masjid Assidik | Jl Bendungan Melayu Utara Rt 11 Rw 01 Kel. Tugu Selatan Kec. Koja, Jakarta Utara</p>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 text-center">
@@ -160,8 +160,8 @@
 									<h3>Wedding Party</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>10:00 AM</span>
-										<span>16:00 PM</span>
+										<span>09:00 AM</span>
+										<span>05:00 PM</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
@@ -183,11 +183,39 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<span>We Love Each Other</span>
-					<h2>Our Story</h2>
-					<p>First met in RS. Satya Negara him as my patient, </p>
+					<h2>Play Our Theme Music</h2>
+					<!-- <p>First met in RS. Satya Negara him as my patient, </p> -->
 				</div>
 			</div>
 			<div class="row">
+				<link rel="stylesheet" type="text/css" href="css/music.css">
+				<div class="container">
+				    <div class="column add-bottom">
+				        <div id="mainwrap">
+				            <div id="nowPlay">
+				                <span class="left" id="npAction">Paused...</span>
+				                <span class="right" id="npTitle"></span>
+				            </div>
+				            <div id="audiowrap">
+				                <div id="audio0">
+				                    <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+				                </div>
+				                <div id="tracks">
+				                    <a id="btnPrev">&larr;</a>
+				                    <a id="btnNext">&rarr;</a>
+				                </div>
+				            </div>
+				            <div id="plwrap">
+				                <ul id="plList"></ul>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+
+
+
+			</div>
+			<!-- <div class="row">
 				<div class="col-md-12 col-md-offset-0">
 					<ul class="timeline animate-box">
 						<li class="animate-box">
@@ -228,7 +256,7 @@
 						</li>
 			    	</ul>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 
@@ -275,9 +303,9 @@
 										<figure>
 											<img src="images/couple-2.jpg" alt="user">
 										</figure>
-										<span>Ascaliko, via <a href="#" class="twitter">Twitter</a></span>
+										<span>Dolly Amnur, via <a href="#" class="twitter">Twitter</a></span>
 										<blockquote>
-											<p>"Semoga menjadi keluarga yang di ridhoi Allah SWT dan menjadi keluarga yang mawdah dan warahmah."</p>
+											<p>"Semoga Langgeng Sampe Kakkek Nenek, Amiin."</p>
 										</blockquote>
 									</div>
 								</div>
@@ -286,9 +314,9 @@
 										<figure>
 											<img src="images/couple-3.jpg" alt="user">
 										</figure>
-										<span>Ascaliko, via <a href="#" class="twitter">Twitter</a></span>
+										<span>Thaura F, via <a href="#" class="twitter">Twitter</a></span>
 										<blockquote>
-											<p>"Semoga menjadi keluarga yang di ridhoi Allah SWT dan menjadi keluarga yang mawdah dan warahmah."</p>
+											<p>"Semoga Bahagia Dunia Akhirat, Amiin."</p>
 										</blockquote>
 									</div>
 								</div>
@@ -403,7 +431,7 @@
 				'Nama Ortu : Laki ( Mukiyo & Siti khotijah) - Perempuan ( Gani Hidayat Alm & Elly ) <br>'+
 				'Akad Nikah : Hari Minggu, Tgl 5 november 2017 <br>'+
 				'Pukul : - <br>'+ 
-				'Tempat :Bertempat di kediaman mempelai wanita <br>'+
+				'Tempat :Bertempat di Masjid  Assidik <br>'+
 				'Resepsi : Hari Minggu , Tgl 5 November 2017 <br>'+
 				'Pukul : 10.00 WIB - 17.00 WIB <br>'+
 				'Tempat : Bertempatan di Lapangan Metromini . Jl Bendungan Melayu Utara Rt 11 Rw 01 Kel.Tugu Selatan Kec.Koja- Jakarta Utara </p>'+
@@ -416,7 +444,7 @@
 
 	  var iconWed = {
 		    url: 'https://image.flaticon.com/icons/svg/349/349333.svg', // url
-		    scaledSize: new google.maps.Size(90, 90), // scaled size
+		    scaledSize: new google.maps.Size(70, 70), // scaled size
 		    origin: new google.maps.Point(0,0), // origin
 		    anchor: new google.maps.Point(0, 0) // anchor
 		};
@@ -444,14 +472,45 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLtpHf0xxQtOcjiU_EuH7GV9QQr-5bRN4&callback=myMap"></script>
 
 	<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("Nov 5, 2017 09:00:00").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	    // Get todays date and time
+	    var now = new Date().getTime();
+	    
+	    // Find the distance between now an the count down date
+	    var distance = countDownDate - now;
+	    
+	    // Time calculations for days, hours, minutes and seconds
+	    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	    
+	    // Output the result in an element with id="demo"
+	    document.getElementById("simply-countdown-one").innerHTML = days + " <font color=pink>days</font> " + hours + " <font color=pink>hours</font> "
+	    + minutes + " <font color=pink>minutes</font> " + seconds + " <font color=pink>seconds</font> ";
+	    
+	    // If the count down is over, write some text 
+	    if (distance < 0) {
+	        clearInterval(x);
+	        document.getElementById("simply-countdown-one").innerHTML = "EXPIRED";
+	    }
+	}, 1000);
+	</script>
+
+	<script>
     var d = new Date(new Date().getTime() + 110 * 120 * 120 * 2000);
 
     // default example
-    simplyCountdown('.simply-countdown-one', {
+    /*simplyCountdown('.simply-countdown-ones', {
         year: d.getFullYear(),
         month: d.getMonth() + 1,
         day: d.getDate()
-    });
+    });*/
 
     //jQuery example
     $('#simply-countdown-losange').simplyCountdown({
@@ -461,7 +520,130 @@
         enableUtc: false
     });
 </script>
+<script>
+jQuery(function ($) {
+    'use strict'
+    var supportsAudio = !!document.createElement('audio').canPlayType;
+    if (supportsAudio) {
+        var index = 0,
+            playing = false,
+            mediaPath = 'music/',
+            extension = '',
+            tracks = [{
+                "track": 1,
+                "name": "Payung Teduh - Akad",
+                "length": "5:45",
+                "file": "Payung Teduh - Akad"
+            }, {
+                "track": 2,
+                "name": "Glenn Fredly - you are my everything",
+                "length": "5:02",
+                "file": "Glenn Fredly - you are my everything [mp3clan.com]"
+            }, {
+                "track": 3,
+                "name": "Pretend - I’ll Stand By You",
+                "length": "5:00",
+                "file": "I’ll Stand By You"
+            }, {
+                "track": 4,
+                "name": "Bruno mars - Marry you",
+                "length": "5:05",
+                "file": "marry you bruno mars"
+            }, {
+                "track": 5,
+                "name": "Celine Dion - My hearth will go on",
+                "length": "5:49",
+                "file": "my hearth will go on"
+            }, {
+                "track": 6,
+                "name": "Christina Perri - A thousand years",
+                "length": "4:50",
+                "file": "Christina Perri - A thousand years"
+            }],
+            buildPlaylist = $.each(tracks, function(key, value) {
+                var trackNumber = value.track,
+                    trackName = value.name,
+                    trackLength = value.length;
+                if (trackNumber.toString().length === 1) {
+                    trackNumber = '0' + trackNumber;
+                } else {
+                    trackNumber = '' + trackNumber;
+                }
+                $('#plList').append('<li><div class="plItem"><div class="plNum">' + trackNumber + '.</div><div class="plTitle">' + trackName + '</div><div class="plLength">' + trackLength + '</div></div></li>');
+            }),
+            trackCount = tracks.length,
+            npAction = $('#npAction'),
+            npTitle = $('#npTitle'),
+            audio = $('#audio1').bind('play', function () {
+                playing = true;
+                npAction.text('Now Playing...');
+            }).bind('pause', function () {
+                playing = false;
+                npAction.text('Paused...');
+            }).bind('ended', function () {
+                npAction.text('Paused...');
+                if ((index + 1) < trackCount) {
+                    index++;
+                    loadTrack(index);
+                    audio.play();
+                } else {
+                    audio.pause();
+                    index = 0;
+                    loadTrack(index);
+                }
+            }).get(0),
+            btnPrev = $('#btnPrev').click(function () {
+                if ((index - 1) > -1) {
+                    index--;
+                    loadTrack(index);
+                    if (playing) {
+                        audio.play();
+                    }
+                } else {
+                    audio.pause();
+                    index = 0;
+                    loadTrack(index);
+                }
+            }),
+            btnNext = $('#btnNext').click(function () {
+                if ((index + 1) < trackCount) {
+                    index++;
+                    loadTrack(index);
+                    if (playing) {
+                        audio.play();
+                    }
+                } else {
+                    audio.pause();
+                    index = 0;
+                    loadTrack(index);
+                }
+            }),
+            li = $('#plList li').click(function () {
+                var id = parseInt($(this).index());
+                if (id !== index) {
+                    playTrack(id);
+                }
+            }),
+            loadTrack = function (id) {
+                $('.plSel').removeClass('plSel');
+                $('#plList li:eq(' + id + ')').addClass('plSel');
+                npTitle.text(tracks[id].name);
+                index = id;
+                audio.src = mediaPath + tracks[id].file + extension;
+            },
+            playTrack = function (id) {
+                loadTrack(id);
+                audio.play();
+            };
+        extension = audio.canPlayType('audio/mpeg') ? '.mp3' : audio.canPlayType('audio/ogg') ? '.ogg' : '';
+        loadTrack(index);
+    }
+});
 
+//initialize plyr
+plyr.setup($('#audio1'), {});
+
+</script>
 	</body>
 </html>
 
